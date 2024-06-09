@@ -1,15 +1,16 @@
 import { Footer } from "./components/Footer/Footer"
+import { Navbar } from "./components/Navbar/Navbar"
 
 function App() {
 
   return (
     <div>
-      <div className="w-screen h-screen bg-black">
+      <Navbar/>
+      <div className="w-screen h-screen bg-white">
         <p className="font-bold text-5xl text-white">
-          Spraga
         </p>
       </div>
-      <Footer />
+      <Footer/>
     </div>
   )
 }

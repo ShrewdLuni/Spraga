@@ -3,7 +3,7 @@ import { FooterInfo } from "./Info"
 
 export const Footer = () => {
   return (
-    <div className="w-full">
+    <div className="w-full flex flex-col items-center lg:items-stretch  ">
       <div className="flex flex-col gap-y-8 items-baseline lg:flex-row lg:justify-between lg:px-20 pt-4">
         <FooterInfo/>
         <FooterContacts/>
