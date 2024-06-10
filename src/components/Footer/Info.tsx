@@ -7,7 +7,7 @@ export const FooterInfo = () => {
       <div className="flex flex-col w-full text-center lg:flex-row lg:justify-center gap-x-8">
         <FooterItem href="" label="About"/>
         <FooterItem href="" label="Shop"/>
-        <FooterItem href="" label="Partners"/>
+        <FooterItem href="/partners" label="Partners"/>
         <FooterItem href="" label="Payment and Delivery"/>
       </div>
     </div>
