@@ -8,10 +8,7 @@ export const Contact = () => {
 
     const formData = new FormData(e.target);
     const inputValue = formData.get('email');
-
-
     console.log(inputValue);
-
   };
 
   return (

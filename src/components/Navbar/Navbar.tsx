@@ -5,12 +5,14 @@ export const Navbar = () => {
   return (
     <div className="fixed flex flex-row flex-shrink items-baseline justify-between bg-transparent top-0 left-0 w-full h-32 px-2 py-6 lg:px-20">
       <div className="flex-shrink-0">
-        <p className="font-semibold text-2xl sm:text-4xl lg:text-6xl">Spraga</p>
+        <a href="/">
+          <p className="font-semibold text-2xl sm:text-4xl lg:text-6xl">Spraga</p>
+        </a>
       </div>
       <div className="flex flex-row gap-x-8 w-0 md:w-auto flex-shrink lg:w-auto overflow-hidden transition-all duration-300">
-        <NavbarItem href="" label="Home"/>
-        <NavbarItem href="" label="Shop"/>
-        <NavbarItem href="" label="About"/>
+        <NavbarItem href="/" label="Home"/>
+        <NavbarItem href="/shop" label="Shop"/>
+        <NavbarItem href="/about" label="About"/>
         <NavbarItem href="/partners" label="Partners"/>
       </div>
       <div className="flex-shrink-0">
