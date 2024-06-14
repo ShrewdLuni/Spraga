@@ -1,6 +1,5 @@
+import { Layout } from "../../components/Layout"
 import { Contact } from "../../components/Contact/Contact"
-import { Footer } from "../../components/Footer/Footer"
-import { Navbar } from "../../components/Navbar/Navbar"
 import { PartnersList } from "./components/PartnersList"
 
 export const Partners = () => {
@@ -14,11 +13,9 @@ export const Partners = () => {
   ]
 
   return (
-    <div>
-      <Navbar/>
+    <Layout>
       <PartnersList partners={list}/>
       <Contact/>
-      <Footer/>
-    </div>
+    </Layout>
   )
 }
