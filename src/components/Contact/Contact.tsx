@@ -12,9 +12,9 @@ export const Contact = () => {
   };
 
   return (
-    <div className="flex flex-row items-center justify-center w-screen h-screen">
-      <div className="flex items-center justify-center w-[50%]">Image</div>
-      <div className="flex items-center justify-center w-[50%]">
+    <div className="flex flex-col lg:flex-row items-center justify-center w-screen h-screen">
+      <div className="flex items-center justify-center w-full h-[50%] lg:w-[50%] lg:h-auto"><p>Image</p></div>
+      <div className="flex items-center justify-center w-full h-[50%] lg:w-[50%] lg:h-auto">
         <form className="flex flex-col gap-y-2 justify-center h-full" onSubmit={handleSubmit}>
           <div>
             <p>Want to be Partners?</p>
