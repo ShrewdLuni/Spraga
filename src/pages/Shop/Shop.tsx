@@ -1,10 +1,14 @@
 import { Layout } from "../../components/Layout"
 
-export const About = () => {
+interface ShopProps {
+
+}
+
+export const Shop = ({} : ShopProps) => {
   return (
     <Layout>
       <div className="w-screen h-screen">
-        About Page
+        Shop page
       </div>
     </Layout>
   )
