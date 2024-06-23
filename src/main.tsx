@@ -8,11 +8,12 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Partners } from './pages/Partners/Partners.tsx';
 import { About } from './pages/About/About.tsx';
 import { Shop } from './pages/Shop/Shop.tsx';
+import { Loading } from './pages/Loading/Loading.tsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App/>,
+    element: <Loading/>,
   },
   {
     path: "/shop",
