@@ -13,7 +13,7 @@ import { Loading } from './pages/Loading/Loading.tsx';
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Loading/>,
+    element: <App/>,
   },
   {
     path: "/shop",

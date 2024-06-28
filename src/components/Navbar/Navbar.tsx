@@ -1,3 +1,4 @@
+import { Equal, ShoppingBag } from "lucide-react"
 import { Button } from "../ui/button"
 import { NavbarItem } from "./NavbarItem"
 
@@ -15,8 +16,9 @@ export const Navbar = () => {
         <NavbarItem href="/about" label="About"/>
         <NavbarItem href="/partners" label="Partners"/>
       </div>
-      <div className="flex-shrink-0">
-        <Button className="bg-black rounded-full px-8" variant="default">CART</Button>
+      <div className="flex flex-row gap-x-2 flex-shrink-0">
+        <Button className="bg-black rounded-full px-8 h-10" variant="default">CART<ShoppingBag /></Button>
+        <Button className="bg-black rounded-full px-8 overflow-hidden" variant="default">Menu<Equal/></Button>
       </div>
     </div>
   )
