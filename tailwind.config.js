@@ -70,11 +70,21 @@ module.exports = {
           from: {top: "250px",transform: "translateX(-50%) rotate(0deg)"},
           to: {top: "-50px",transform: "translateX(-50%) rotate(360deg)"},
         },
+        "loop-scroll-right":{
+          from: {transform: "translateX(0)"},
+          to: {transform: "translateX(-100%)"},
+        },
+        "loop-scroll-left":{
+          from: {transform: "translateX(-100%)"},
+          to: {transform: "translateX(0)"},
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fill": "fill 7s ease-in-out infinite",
+        "loop-scroll-right": "loop-scroll-right 30s linear infinite",
+        "loop-scroll-left": "loop-scroll-left 30s linear infinite",
       },
     },
   },
