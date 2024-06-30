@@ -1,7 +1,6 @@
 import { Layout } from "../../components/Layout"
 import { Contact } from "../../components/Contact/Contact"
 import { PartnersList } from "./components/PartnersList"
-import { Map } from "./components/Map"
 
 export const Partners = () => {
   var list = [

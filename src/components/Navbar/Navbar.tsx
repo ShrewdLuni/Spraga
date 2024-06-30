@@ -4,7 +4,7 @@ import { NavbarItem } from "./NavbarItem"
 
 export const Navbar = () => {
   return (
-    <div className="fixed flex flex-row flex-shrink items-baseline justify-between bg-transparent top-0 left-0 w-full h-32 px-2 py-6 lg:px-20">
+    <div className="fixed flex flex-row flex-shrink items-baseline justify-between bg-transparent top-0 left-0 w-full h-32 px-2 py-6 lg:px-20 z-50">
       <div className="flex-shrink-0">
         <a href="/">
           <p className="font-semibold text-2xl sm:text-4xl lg:text-6xl">Spraga</p>
