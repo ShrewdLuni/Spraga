@@ -9,6 +9,7 @@ import { Partners } from './pages/Partners/Partners.tsx';
 import { About } from './pages/About/About.tsx';
 import { Shop } from './pages/Shop/Shop.tsx';
 import { Loading } from './pages/Loading/Loading.tsx';
+import { PaymentAndDelivery } from './pages/PaymentsAndDelivery/PaymentsAndDelivery.tsx';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/partners",
     element: <Partners/>,
+  },
+  {
+    path: "/aboutDelivery",
+    element: <PaymentAndDelivery/>,
   },
 ]);
 
