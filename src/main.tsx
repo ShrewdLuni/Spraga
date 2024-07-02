@@ -10,6 +10,7 @@ import { About } from './pages/About/About.tsx';
 import { Shop } from './pages/Shop/Shop.tsx';
 import { Loading } from './pages/Loading/Loading.tsx';
 import { PaymentAndDelivery } from './pages/PaymentsAndDelivery/PaymentsAndDelivery.tsx';
+import { Dashborad } from './pages/Dashboard/Dashborad.tsx';
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
   {
     path: "/aboutDelivery",
     element: <PaymentAndDelivery/>,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashborad/>,
   },
 ]);
 
