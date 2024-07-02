@@ -22,7 +22,7 @@ export const PaymentAndDelivery = () => {
 
   return (
     <Layout>
-      <div className="flex flex-col lg:flex-row justify-center gap-20 items-center w-screen h-auto mt-32 py-[60px] lg:py-[140px]">
+      <div className="flex flex-col lg:flex-row justify-center gap-x-8 gap-y-8 w-screen h-auto mt-32 px-2 py-[60px] lg:py-[100px]">
         {information.map(item => (<InformationlSection label={item.label} informationList={item.informationList}/>))}
       </div>
     </Layout>
