@@ -1,4 +1,5 @@
 import { Layout } from "../../components/Layout"
+import { StoryBlock } from "./components/StoryBlock"
 
 export const About = () => {
   return (
@@ -13,6 +14,7 @@ export const About = () => {
           <p className="w-[50%] text-3xl font-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed diam nisi, malesuada non ante sed, bibendum bibendum urna. In nec faucibus leo. Fusce sed nisi id ante imperdiet vehicula at quis metus. Praesent in tellus maximus eros convallis tristique a non justo. Maecenas pellentesque accumsan pulvinar. Aliquam vel dictum elit, et hendrerit erat. Nunc mi magna, finibus sed aliquam vitae, condimentum ut purus. Sed in dui varius, consectetur nunc quis, rutrum lorem.</p>
         </div>
       </div>
+      <StoryBlock/>
     </Layout>
   )
 }
