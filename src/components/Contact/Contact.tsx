@@ -12,18 +12,18 @@ export const Contact = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-center w-screen h-screen">
+    <div className="flex flex-col lg:flex-row items-center justify-center px-8 mt-4 w-screen h-screen">
       <div className="flex items-center justify-center w-full h-[50%] lg:w-[50%] lg:h-auto"><p>Image</p></div>
       <div className="flex items-center justify-center w-full h-[50%] lg:w-[50%] lg:h-auto">
         <form className="flex flex-col gap-y-2 justify-center h-full" onSubmit={handleSubmit}>
           <div>
-            <p>Want to be Partners?</p>
-            <p>Fill the form and become one</p>
+            <p className="text-5xl font-bold">Want to be Partners?</p>
+            <p className="text-3xl font-semibold">Fill the form and become one!</p>
           </div>
-          <Input type="text" placeholder="Name" name="name"/>
-          <Input type="number" placeholder="Phone" name="phone"/>
-          <Input type="email" placeholder="Email" name="email"/>
-          <Button type="submit">Submit</Button>
+          <Input className="font-bold text-xl" type="text" placeholder="Name" name="name"/>
+          <Input className="font-bold text-xl" type="email" placeholder="Email" name="email"/>
+          <Input className="font-bold text-xl h-32 align-middle" type="text" placeholder="" name="info"/>
+          <Button className="font-bold text-xl " type="submit">Submit!</Button>
         </form>
       </div>
     </div>

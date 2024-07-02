@@ -2,46 +2,47 @@ import { Layout } from "../../components/Layout"
 import { Contact } from "../../components/Contact/Contact"
 import { PartnersList } from "./components/PartnersList"
 
+import ashan from "/partners/ashan.png"
+import atb from "/partners/atb.png"
+import fozzy from "/partners/fozzy.png"
+import goodwine from "/partners/goodwine.png"
+import idealist from "/partners/idealist.png"
+import metro from "/partners/metro.png"
+import novus from "/partners/novus.png"
+import okko from "/partners/okko.jpg"
+import salateria from "/partners/salateria.png"
+import silpo from "/partners/silpo.png"
+import socar from "/partners/socar.png"
+import span from "/partners/span.png"
+import upg from "/partners/upg.png"
+import varus from "/partners/varus.png"
+import wog from "/partners/wog.png"
+
 export const Partners = () => {
-  var list = [
+  var list : { category: string; isLeftDiraction: boolean; list: {src: string;alt?: string | undefined;}[];}[] = [
     {category : "Stores", isLeftDiraction:false, list : 
       [
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
+        {src : ashan, alt: "ashan logo"},
+        {src : atb, alt: "atb logo"},
+        {src : varus, alt: "varus logo"},
+        {src : silpo, alt: "silpo logo"},
+        {src : metro, alt: "metro logo"},
       ]},
     {category : "Stores", isLeftDiraction:true, list : 
       [
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-        {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-        {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
+        {src : goodwine, alt: "goodwine logo"},
+        {src : novus, alt: "novus logo"},
+        {src : fozzy, alt: "fozzy logo"},
+        {src : salateria, alt: "salateria logo"},
+        {src : idealist, alt: "idealist logo"}
       ]},
       {category : "Stores", isLeftDiraction:false, list : 
         [
-          {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-          {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-          {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-          {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-          {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-          {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-          {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-          {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
-          {src : "https://supplier.atbmarket.com/custom/themes/default/images/company_logo.png?v=7p-eCkidgF-pLB2eFUysMw"},
-          {src : "https://tvoya-opora.org/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDVG9JYTJWNVNTSWhjWEppZFdwcllqaHliekptWVc1b2JucG9aMlIyYkdjMmNHMTFZUVk2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpVFdsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW5aaGNuVnpYM05vWVhKcGJtY3VjRzVuSWpzZ1ptbHNaVzVoYldVcVBWVlVSaTA0SnlkMllYSjFjMTl6YUdGeWFXNW5MbkJ1WndZN0JsUTZFV052Ym5SbGJuUmZkSGx3WlVraURtbHRZV2RsTDNCdVp3WTdCbFE2RVhObGNuWnBZMlZmYm1GdFpUb0tiRzlqWVd3PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9rZXkifX0=--125c550022d55d0c7300785502f685c769e4f979/varus_sharing.png"},
+          {src : socar, alt: "socar logo"},
+          {src : okko, alt: "okko logo"},
+          {src : span, alt: "span logo"},
+          {src : upg, alt: "upg logo"},
+          {src : wog, alt: "wog logo"}
         ]},
   ]
 
