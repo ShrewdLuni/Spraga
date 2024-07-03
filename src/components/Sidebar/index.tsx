@@ -1,9 +1,15 @@
+import { useState } from "react";
 import { SidebarItem } from "./SidebarItem"
 
 export const Sidebar = () => {
+
+  const [activePage,setActivePage] = useState()
+
   let list : { label: string; href: string;}[] = [
-    {label: "Statistics",href:"stats"},
-    {label: "Products",href:"products"}
+    {label: "Orders",href:"orders"},
+    {label: "Products",href:"products"},
+    {label: "Stats",href:"stats"},
+    {label: "Settings",href:"settings"}
   ]
 
   return (
@@ -12,7 +18,7 @@ export const Sidebar = () => {
         Spraga
       </div>
       <div className="flex flex-col gap-y-4">
-        {list.map(item => <SidebarItem label={item.label} href={item.href}/>)}
+        {list.map(item => <SidebarItem label={item.label} href={item.href} isActive={activePage == item.label} setActive={setActivePage}/>)}
       </div>
     </div>
   )
