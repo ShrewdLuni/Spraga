@@ -5,12 +5,14 @@ import './index.css'
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import { Partners } from './pages/Partners/Partners.tsx';
-import { About } from './pages/About/About.tsx';
-import { Shop } from './pages/Shop/Shop.tsx';
-import { Loading } from './pages/Loading/Loading.tsx';
-import { PaymentAndDelivery } from './pages/PaymentsAndDelivery/PaymentsAndDelivery.tsx';
-import { Dashborad } from './pages/Dashboard/Dashborad.tsx';
+import { Partners } from "./pages/Partners/Partners.tsx";
+import { About } from "./pages/About/About.tsx";
+import { Shop } from "./pages/Shop/Shop.tsx";
+import { PaymentAndDelivery } from "./pages/PaymentsAndDelivery/PaymentsAndDelivery.tsx"
+import { Dashborad } from "./pages/Dashboard/Dashborad.tsx";
+import { Settings } from "./pages/Settings/Settings.tsx";
+import { Stats } from "./pages/Stats/Stats.tsx";
+import { Products } from "./pages/Products/Products.tsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,18 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <Dashborad/>,
+  },
+  {
+    path: "/dashboard/products",
+    element: <Products/>,
+  },
+  {
+    path: "/dashboard/stats",
+    element: <Stats/>,
+  },
+  {
+    path: "/dashboard/settings",
+    element: <Settings/>,
   },
 ]);
 
