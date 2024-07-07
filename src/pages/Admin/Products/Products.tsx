@@ -1,4 +1,4 @@
-import { DashboardLayout } from "../../components/DashboardLayout"
+import { DashboardLayout } from "../../../components/DashboardLayout"
 
 export const Products = () => {
   return (

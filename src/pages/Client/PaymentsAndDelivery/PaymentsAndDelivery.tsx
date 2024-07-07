@@ -1,4 +1,4 @@
-import { Layout } from "../../components/Layout" 
+import { Layout } from "../../../components/Layout" 
 import { InformationlSection } from "./components/InformationSection"
 
 export const PaymentAndDelivery = () => {

@@ -1,5 +1,5 @@
-import { Layout } from "../../components/Layout"
-import { Contact } from "../../components/Contact/Contact"
+import { Layout } from "../../../components/Layout"
+import { Contact } from "../../../components/Contact/Contact"
 import { PartnersList } from "./components/PartnersList"
 
 import ashan from "/partners/ashan.png"

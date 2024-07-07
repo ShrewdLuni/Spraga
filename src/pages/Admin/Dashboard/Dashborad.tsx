@@ -1,10 +1,10 @@
-import { DashboardLayout } from "../../components/DashboardLayout"
+import { DashboardLayout } from "../../../components/DashboardLayout"
 
-export const Settings = () => {
+export const Dashborad = () => {
   return (
     <DashboardLayout>
       <div className="w-screen h-screen bg-rose-500">
-        Settings
+        Dahsborad
       </div>
     </DashboardLayout>
   )

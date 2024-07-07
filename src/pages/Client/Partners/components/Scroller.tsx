@@ -1,4 +1,4 @@
-import { cn } from "../../../lib/utils"
+import { cn } from "../../../../lib/utils"
 import { ScrollerItem } from "./ScrollerItem"
 
 interface ScrollerProps {

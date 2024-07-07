@@ -1,4 +1,4 @@
-import { Layout } from "../../components/Layout"
+import { Layout } from "../../../components/Layout"
 import { ShopItem } from "./components/ShopItem"
 
 export const Shop = () => {

@@ -1,4 +1,4 @@
-import { Layout } from "../../components/Layout"
+import { Layout } from "../../../components/Layout"
 import { AboutInfo } from "./components/AboutInfo"
 import { StoryBlock } from "./components/StoryBlock"
 

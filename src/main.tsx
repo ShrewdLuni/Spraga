@@ -5,14 +5,14 @@ import './index.css'
 
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 
-import { Partners } from "./pages/Partners/Partners.tsx";
-import { About } from "./pages/About/About.tsx";
-import { Shop } from "./pages/Shop/Shop.tsx";
-import { PaymentAndDelivery } from "./pages/PaymentsAndDelivery/PaymentsAndDelivery.tsx"
-import { Dashborad } from "./pages/Dashboard/Dashborad.tsx";
-import { Settings } from "./pages/Settings/Settings.tsx";
-import { Stats } from "./pages/Stats/Stats.tsx";
-import { Products } from "./pages/Products/Products.tsx";
+import { Partners } from "./pages/Client/Partners/Partners.tsx";
+import { About } from "./pages/Client/About/About.tsx";
+import { Shop } from "./pages/Client/Shop/Shop.tsx";
+import { PaymentAndDelivery } from "./pages/Client/PaymentsAndDelivery/PaymentsAndDelivery.tsx"
+import { Dashborad } from "./pages/Admin/Dashboard/Dashborad.tsx";
+import { Settings } from "./pages/Admin/Settings/Settings.tsx";
+import { Stats } from "./pages/Admin/Stats/Stats.tsx";
+import { Products } from "./pages/Admin/Products/Products.tsx";
 
 const router = createBrowserRouter([
   {
