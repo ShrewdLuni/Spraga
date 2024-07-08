@@ -10,6 +10,7 @@ Title: Coca-Cola Can / Can of Soda
 import * as THREE from 'three'
 import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
+import React from 'react'
 
 type GLTFResult = GLTF & {
   nodes: {
